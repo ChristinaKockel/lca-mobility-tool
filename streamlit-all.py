@@ -396,8 +396,6 @@ st.sidebar.markdown("Prof. Dr.-Ing. Aaron Praktiknjo")
 st.sidebar.markdown("post_fcn-ese@eonerc.rwth-aachen.de")
 #st.sidebar.image("/Users/admin/Documents/Lavoro/basic/rwth_eerc_logo_rgb.png")
 
-tab1, tab2 = st.tabs(["Results", "Analysis"])
-
 # MAIN AREA
 st.header("JERICHO")
 st.title("Life cycle assessment mobility tool")
@@ -510,6 +508,8 @@ with tab2:
             car5_ct_input = st.selectbox("Car Type:", ['none', ct_ar[0],ct_ar[1], ct_ar[2], ct_ar[3]], key='car5.1')
         with col2:
             car5_dt_input = st.selectbox("Type of Drive Train:", [dt_ar[0],dt_ar[1], dt_ar[2], dt_ar[3], dt_ar[4]], key='car5.2')
+
+ tab1, tab2 = st.tabs(["Results", "Analysis"])
 
 # START ANALYSIS
 
