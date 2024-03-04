@@ -619,50 +619,50 @@ with tab2:
     x1=[0,1,2,3,4]
 
 # DISPLAY CHART TO COMPARE CARS
-#  if fig5:
-#     # if parameters have been set, display analysis chart
-#     st.pyplot(fig5)
+ if fig5:
+    # if parameters have been set, display analysis chart
+    st.pyplot(fig5)
 
-#     with st.expander("Summary of intercepts"):
-#         #a = y-axis intercept
-#         #b = slope 
+    with st.expander("Summary of intercepts"):
+        #a = y-axis intercept
+        #b = slope 
 
-#         car_ar= (graph_car1,graph_car2, graph_car3, graph_car4, graph_car5)
-#         car_ar_name = ['Car 1','Car 2', 'Car 3','Car 4','Car 5']
+        car_ar= (graph_car1,graph_car2, graph_car3, graph_car4, graph_car5)
+        car_ar_name = ['Car 1','Car 2', 'Car 3','Car 4','Car 5']
 
-#         x1=[0,1,2,3,4]
+        x1=[0,1,2,3,4]
 
-#         for i in x1: #loop
-#             if len(car_ar[i])>0: #wenn nicht leer
-#                 a_i = car_ar[i][0] #y-achsen abschnitt
-#                 b_i = car_ar[i][1]-car_ar[i][0] #steigung
+        for i in x1: #loop
+            if len(car_ar[i])>0: #wenn nicht leer
+                a_i = car_ar[i][0] #y-achsen abschnitt
+                b_i = car_ar[i][1]-car_ar[i][0] #steigung
 
-#                 for j in x1: #i ausgangsgraph, j vergleichsgraph
-#                     if len(car_ar[j])>0:
-#                         if j>i: #wenn noch nicht verglichen hat
-#                             a_j = car_ar[j][0] 
-#                             b_j = car_ar[j][1]-car_ar[j][0]
+                for j in x1: #i ausgangsgraph, j vergleichsgraph
+                    if len(car_ar[j])>0:
+                        if j>i: #wenn noch nicht verglichen hat
+                            a_j = car_ar[j][0] 
+                            b_j = car_ar[j][1]-car_ar[j][0]
                             
-#                             #wo sich auf x treffen
-#                             if b_j-b_i!=0:
-#                                 xij =(a_i-a_j)/(b_j-b_i) #intersection
+                            #wo sich auf x treffen
+                            if b_j-b_i!=0:
+                                xij =(a_i-a_j)/(b_j-b_i) #intersection
 
-#                                 xij_int = xij.astype(int) #integer
+                                xij_int = xij.astype(int) #integer
 
-#                                 #wo sich auf y treffen
-#                                 yij = a_j+xij*b_j
-#                                 yij_int = round(yij)
+                                #wo sich auf y treffen
+                                yij = a_j+xij*b_j
+                                yij_int = round(yij)
 
-#                                 if xij_int < 0:
-#                                     st.write(car_ar_name[i]+ ' and ' +car_ar_name[j] + ' have no intercept.')
-#                                 else:
-#                                     st.write(car_ar_name[i] + ' and '+  car_ar_name[j] + ' intercept at', xij_int*1000, 'kilometer and climate change impact of',yij_int ,'kg CO2-eq.')              
-#                                 st.write(' ')
-#                             else:
-#                                 st.write(car_ar_name[i]+ ' and ' +car_ar_name[j] + ' have no intercept.')
-#                                 st.write(' ')
+                                if xij_int < 0:
+                                    st.write(car_ar_name[i]+ ' and ' +car_ar_name[j] + ' have no intercept.')
+                                else:
+                                    st.write(car_ar_name[i] + ' and '+  car_ar_name[j] + ' intercept at', xij_int*1000, 'kilometer and climate change impact of',yij_int ,'kg CO2-eq.')              
+                                st.write(' ')
+                            else:
+                                st.write(car_ar_name[i]+ ' and ' +car_ar_name[j] + ' have no intercept.')
+                                st.write(' ')
 
 
                 
- #else:
-    #st.write("")
+ else:
+    st.write("")
