@@ -467,16 +467,16 @@ with tab2:
 
  # TAKE CAR TYPE SETTINGS
  #with st.expander("Choose types of cars and drives to compare:"):
-  "#### Car 1:"
-  with st.container():
+ "#### Car 1:"
+ with st.container():
         col1, col2 = st.columns(2)
         with col1:
             car1_ct_input = st.selectbox("Car Type:", ['none', ct_ar[0],ct_ar[1], ct_ar[2], ct_ar[3]], key='car1.1')
         with col2:
             car1_dt_input = st.selectbox("Type of Drive Train:", [dt_ar[0],dt_ar[1], dt_ar[2], dt_ar[3], dt_ar[4]], key='car1.2')
      
-  "#### Car 2:"
-  with st.container():
+ "#### Car 2:"
+ with st.container():
         col1, col2 = st.columns(2)
         with col1:
             car2_ct_input = st.selectbox("Car Type:", ['none', ct_ar[0],ct_ar[1], ct_ar[2], ct_ar[3]], key='car2.1')
@@ -484,16 +484,16 @@ with tab2:
         with col2:
             car2_dt_input = st.selectbox("Type of Drive Train:", [dt_ar[0],dt_ar[1], dt_ar[2], dt_ar[3], dt_ar[4]], key='car2.2')
      
-  "#### Car 3:"
-  with st.container():
+ "#### Car 3:"
+ with st.container():
         col1, col2 = st.columns(2)
         with col1:
             car3_ct_input = st.selectbox("Car Type:", ['none', ct_ar[0],ct_ar[1], ct_ar[2], ct_ar[3]], key='car3.1')
         with col2:
             car3_dt_input = st.selectbox("Type of Drive Train:", [dt_ar[0],dt_ar[1], dt_ar[2], dt_ar[3], dt_ar[4]], key='car3.2')
      
-  "#### Car 4:"
-  with st.container():
+ "#### Car 4:"
+ with st.container():
         col1, col2 = st.columns(2)
         with col1:
             car4_ct_input = st.selectbox("Car Type:", ['none', ct_ar[0],ct_ar[1], ct_ar[2], ct_ar[3]], key='car4.1')
@@ -501,8 +501,8 @@ with tab2:
         with col2:
             car4_dt_input = st.selectbox("Type of Drive Train:", [dt_ar[0],dt_ar[1], dt_ar[2], dt_ar[3], dt_ar[4]], key='car4.2')
      
-  "#### Car 5:"
-  with st.container():
+ "#### Car 5:"
+ with st.container():
         col1, col2 = st.columns(2)
         with col1:
             car5_ct_input = st.selectbox("Car Type:", ['none', ct_ar[0],ct_ar[1], ct_ar[2], ct_ar[3]], key='car5.1')
