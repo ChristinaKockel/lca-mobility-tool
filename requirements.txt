@@ -30,4 +30,3 @@ termcolor==2.3.0
 urllib3==1.26.14
 webencodings==0.5.1
 yfinance==0.2.4
-streamlit==1.24.0
