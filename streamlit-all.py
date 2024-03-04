@@ -394,7 +394,7 @@ st.sidebar.markdown("Chair for Energy System Economics")
 st.sidebar.markdown("(FCN-ESE)")
 st.sidebar.markdown("Prof. Dr.-Ing. Aaron Praktiknjo")
 st.sidebar.markdown("post_fcn-ese@eonerc.rwth-aachen.de")
-st.sidebar.image("/Users/admin/Documents/Lavoro/basic/rwth_eerc_logo_rgb.png")
+#st.sidebar.image("/Users/admin/Documents/Lavoro/basic/rwth_eerc_logo_rgb.png")
 
 # MAIN AREA
 st.header("JERICHO")
