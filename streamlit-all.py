@@ -404,7 +404,7 @@ with st.expander("Learn more"):
     st.write("After the energy and industrial sectors, the transport sector in Germany emits the most greenhouse gas emissions (GHG) in Germany, thus promoting anthropogenic climate change. One approach to reducing greenhouse gas emissions can be the electrification of the powertrain.  However, when comparing different powertrain technologies, not only the CO2 emissions during the use phase should be considered, but also **all greenhouse gas emissions (CO2-eq.) over the entire life cycle**. Many factors can play a role in this analysis. That is why many scientific life cycle assessment (LCA) studies have obtained differing results in the past few years.   \n  \nFor this, you have first the possibility to set the **parameters for the scenario setting (1.1)** and the **life cycle inventory (1.2)**. After you can see the **results for the different life cycle stages** and summed up **(2)** or to choose which type of cars with which power trains to **compare** directly **(3)**.\n\nHere only the climate change impact measured in CO2-eq is evaluated as an example. In a comprehensive analyses, the other impact categories should to be taken into account as well.")
 
 # SELECT TAB
-tab1, tab2 = st.tabs(["Results", "Analysis"])
+tab2, tab1  = st.tabs(["Results", "Analysis"])
 
 ## RESULTS TAB
 with tab1:
