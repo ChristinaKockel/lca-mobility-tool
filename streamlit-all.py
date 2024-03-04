@@ -20,11 +20,11 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 #from ipywidgets import HBox, VBox, Label, IntSlider, Dropdown, RadioButtons, Layout, Style 
 
 #4: material impact climate change, could be expanded to all impact categories
-cc_impact_prod=pd.read_excel('assets/excel/Input_LCA_TESA.xlsx', sheet_name = 'cc_impact_prod', index_col=[0], header=[0], usecols=[0,1,2,3,4], engine ='openpyxl')
-cc_impact_use=pd.read_excel('assets/excel/Input_LCA_TESA.xlsx', sheet_name = 'cc_impact_use', index_col=[0], header=[0], usecols=[0,1,2,3], engine ='openpyxl')
+cc_impact_prod=pd.read_excel('assets/excel/Input_LCA_TESA.xlsx', sheet_name = 'cc_impact_prod', index_col=[0], header=[0], engine ='openpyxl') #usecols=[0,1,2,3,4]
+cc_impact_use=pd.read_excel('assets/excel/Input_LCA_TESA.xlsx', sheet_name = 'cc_impact_use', index_col=[0], header=[0],  engine ='openpyxl') #usecols=[0,1,2,3],
 
 #5: materials and car specifications
-amount_mat_ct1=pd.read_excel('assets/excel/Input_LCA_TESA.xlsx',sheet_name = 'mat_ct1', index_col=[0], header=[0], usecols=[0,2,3,4,5,6], engine ='openpyxl')
+amount_mat_ct1=pd.read_excel('assets/excel/Input_LCA_TESA.xlsx',sheet_name = 'mat_ct1', index_col=[0], header=[0], usecols=[0,2,3,4,5,6],engine ='openpyxl')
 car_specs_ct1=pd.read_excel('assets/excel/Input_LCA_TESA.xlsx',sheet_name = 'car_specs_ct1', index_col=[0], header=[0], usecols=[0,2,3,4,5,6], engine ='openpyxl')
 
 amount_mat_ct2=pd.read_excel('assets/excel/Input_LCA_TESA.xlsx',sheet_name = 'mat_ct2', index_col=[0], header=[0], usecols=[0,2,3,4,5,6], engine ='openpyxl')
