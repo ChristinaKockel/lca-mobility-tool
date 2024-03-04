@@ -61,7 +61,7 @@ def results_LCA(cc_impact_prod, cc_mat_prod, cc_el_prod, hydrogen_prod, cons_var
     for ct_key in ct_ar:
         i=ct_ar.index(ct_key) #cartype
 
-        for items, col in amount_mat[i].iteritems():
+        for items, col in amount_mat[i].items():
         
             lcascore_mat = (cc_impact_prod[cc_mat_prod]*((amount_mat[i][items])*car_specs[i][items]['weight'])).sum() #einfach
 
