@@ -633,18 +633,18 @@ with tab2:
         x1=[0,1,2,3,4]
 
         for i in x1: #loop
-            if car_ar[i] != []: #wenn nicht leer
+            if len(car_ar[i])>0: #wenn nicht leer
                 a_i = car_ar[i][0] #y-achsen abschnitt
                 b_i = car_ar[i][1]-car_ar[i][0] #steigung
 
                 for j in x1: #i ausgangsgraph, j vergleichsgraph
-                    if car_ar[j] != []:
+                    if len(car_ar[j])>0:
                         if j>i: #wenn noch nicht verglichen hat
                             a_j = car_ar[j][0] 
                             b_j = car_ar[j][1]-car_ar[j][0]
                             
                             #wo sich auf x treffen
-                            if b_j!=b_i:
+                            if b_j-b_i!=0:
                                 xij =(a_i-a_j)/(b_j-b_i) #intersection
 
                                 xij_int = xij.astype(int) #integer
